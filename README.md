@@ -7,4 +7,4 @@ Divide your solution into several functions and use appropriate data types.
 Do not use the std::hex manipulator.
 
 ### Bonus question: 
-why do the programmers mismatch Christmass and Halloween?
+why do the programmers mismatch Christmas and Halloween?

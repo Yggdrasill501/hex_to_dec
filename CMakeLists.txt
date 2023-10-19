@@ -3,4 +3,6 @@ project(dec_to_hex)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(dec_to_hex main.cpp)
+add_executable(dec_to_hex main.cpp
+        converter.h
+        converter.cpp)
