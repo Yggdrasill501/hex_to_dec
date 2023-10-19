@@ -1,17 +1,26 @@
 #ifndef CONVERTER_H
 #define CONVERTER_H
 
+#include <iostream>
+#include <string>
+#include <limits>
+#include <cctype>
+#include <type_traits>
+
+template<typename T>
 class Converter {
-    int decimalNumber;
+    static_assert(std::is_integral<T>::value, "Type must be an integral type!");
+
+private:
+    T decimalNumber;
     std::string hexString;
-    std::string toHex(int num);
-    int fromHex(const std::string& hex);
+
+    std::string toHex(T num) const;
+    T fromHex(const std::string& hex) const;
 
 public:
-    Converter() : decimalNumber(0), hexString("");
-    ~Converter();
+    NumberConverter();
     void getInput(int choice);
     void displayResult(int choice) const;
 };
-
 #endif //CONVERTER_H
