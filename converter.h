@@ -19,7 +19,7 @@ private:
     T fromHex(const std::string& hex) const;
 
 public:
-    NumberConverter();
+    Converter();
     void getInput(int choice);
     void displayResult(int choice) const;
 };
