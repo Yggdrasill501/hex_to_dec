@@ -20,4 +20,5 @@ public:
     void displayResult(int choice) const;
 };
 
+
 #endif //CONVERTER_H
