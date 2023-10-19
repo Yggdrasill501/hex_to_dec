@@ -34,9 +34,9 @@ int Converter::fromHex(const std::string& hex) const {
     return decimalResult;
 }
 
-NumberConverter::NumberConverter() : decimalNumber(0), hexString("") {}
+Converter::Converter() : decimalNumber(0), hexString("") {}
 
-void NumberConverter::getInput(int choice) {
+void Converter::getInput(int choice) {
     if (choice == 1) {
         std::cout << "Enter a number in decimal system: ";
         while (!(std::cin >> decimalNumber)) {
@@ -56,7 +56,7 @@ void NumberConverter::getInput(int choice) {
     }
 }
 
-void NumberConverter::displayResult(int choice) const {
+void Converter::displayResult(int choice) const {
     if (choice == 1) {
         std::cout << "The hexadecimal representation is: " << toHex(decimalNumber) << std::endl;
     } else {
