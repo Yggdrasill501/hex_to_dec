@@ -2,13 +2,13 @@
 
 #include "converter.h"
 
-std::string Converter::toHex(int num) const {
+std::string Converter::toHex(int num) {
     if (num == 0) {
         return "0";
     }
 
     const std::string hexChars = "0123456789ABCDEF";
-    std::string hexResult = "";
+    std::string hexResult;
 
     while (num != 0) {
         int remainder = num % 16;
@@ -19,7 +19,7 @@ std::string Converter::toHex(int num) const {
     return hexResult;
 }
 
-int Converter::fromHex(const std::string& hex) const {
+int Converter::fromHex(const std::string& hex) {
     int decimalResult = 0;
     for (const char& c : hex) {
         decimalResult *= 16;
@@ -34,7 +34,9 @@ int Converter::fromHex(const std::string& hex) const {
     return decimalResult;
 }
 
-Converter::Converter() : decimalNumber(0), hexString("") {}
+Converter::Converter()
+    : decimalNumber(0){
+}
 
 void Converter::getInput(int choice) {
     if (choice == 1) {

@@ -11,14 +11,13 @@ private:
     int decimalNumber;
     std::string hexString;
 
-    std::string toHex(int num) const;
-    int fromHex(const std::string& hex) const;
+    static std::string toHex(int num) ;
+    static int fromHex(const std::string& hex) ;
 
 public:
     Converter();
     void getInput(int choice);
     void displayResult(int choice) const;
 };
-
 
 #endif //CONVERTER_H
