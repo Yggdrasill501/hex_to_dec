@@ -1,2 +1,5 @@
 # ninja log v5
 0	724	1697728904086914360	CMakeFiles/dec_to_hex.dir/main.cpp.o	315783b53e3740f2
+14	663	1697729801576332738	CMakeFiles/dec_to_hex.dir/converter.cpp.o	5d5a67a1938e8d7c
+13	960	1697729801561257804	CMakeFiles/dec_to_hex.dir/main.cpp.o	315783b53e3740f2
+960	1215	1697729802125331242	dec_to_hex	324cdc9acc1877fa
