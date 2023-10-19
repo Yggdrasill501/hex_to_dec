@@ -1,4 +1,4 @@
-#include "NumberConverter.hpp"
+#include "converter.hpp"
 
 int main() {
     Converter converter;
