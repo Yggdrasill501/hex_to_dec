@@ -1,4 +1,4 @@
-#include "converter.hpp"
+#include "converter.h"
 
 int main() {
     Converter converter;
