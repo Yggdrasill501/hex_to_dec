@@ -55,8 +55,20 @@ build CMakeFiles/dec_to_hex.dir/main.cpp.o: CXX_COMPILER__dec_to_hex_unscanned_D
   OBJECT_DIR = CMakeFiles/dec_to_hex.dir
   OBJECT_FILE_DIR = CMakeFiles/dec_to_hex.dir
 
-build CMakeFiles/dec_to_hex.dir/converter.cpp.o: CXX_COMPILER__dec_to_hex_unscanned_Debug /Users/yggdrasill501/Documents/code/cpp/dec_to_hex/converter.cpp || cmake_object_order_depends_target_dec_to_hex
-  DEP_FILE = CMakeFiles/dec_to_hex.dir/converter.cpp.o.d
+build CMakeFiles/dec_to_hex.dir/decimal_to_hex.cpp.o: CXX_COMPILER__dec_to_hex_unscanned_Debug /Users/yggdrasill501/Documents/code/cpp/dec_to_hex/decimal_to_hex.cpp || cmake_object_order_depends_target_dec_to_hex
+  DEP_FILE = CMakeFiles/dec_to_hex.dir/decimal_to_hex.cpp.o.d
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/dec_to_hex.dir
+  OBJECT_FILE_DIR = CMakeFiles/dec_to_hex.dir
+
+build CMakeFiles/dec_to_hex.dir/hex_to_decimal.cpp.o: CXX_COMPILER__dec_to_hex_unscanned_Debug /Users/yggdrasill501/Documents/code/cpp/dec_to_hex/hex_to_decimal.cpp || cmake_object_order_depends_target_dec_to_hex
+  DEP_FILE = CMakeFiles/dec_to_hex.dir/hex_to_decimal.cpp.o.d
+  FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/dec_to_hex.dir
+  OBJECT_FILE_DIR = CMakeFiles/dec_to_hex.dir
+
+build CMakeFiles/dec_to_hex.dir/number.cpp.o: CXX_COMPILER__dec_to_hex_unscanned_Debug /Users/yggdrasill501/Documents/code/cpp/dec_to_hex/number.cpp || cmake_object_order_depends_target_dec_to_hex
+  DEP_FILE = CMakeFiles/dec_to_hex.dir/number.cpp.o.d
   FLAGS = -g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/dec_to_hex.dir
   OBJECT_FILE_DIR = CMakeFiles/dec_to_hex.dir
@@ -69,7 +81,7 @@ build CMakeFiles/dec_to_hex.dir/converter.cpp.o: CXX_COMPILER__dec_to_hex_unscan
 #############################################
 # Link the executable dec_to_hex
 
-build dec_to_hex: CXX_EXECUTABLE_LINKER__dec_to_hex_Debug CMakeFiles/dec_to_hex.dir/main.cpp.o CMakeFiles/dec_to_hex.dir/converter.cpp.o
+build dec_to_hex: CXX_EXECUTABLE_LINKER__dec_to_hex_Debug CMakeFiles/dec_to_hex.dir/main.cpp.o CMakeFiles/dec_to_hex.dir/decimal_to_hex.cpp.o CMakeFiles/dec_to_hex.dir/hex_to_decimal.cpp.o CMakeFiles/dec_to_hex.dir/number.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
   OBJECT_DIR = CMakeFiles/dec_to_hex.dir
   POST_BUILD = :
