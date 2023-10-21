@@ -1,13 +1,14 @@
+// NumberConverter.cpp
+
 #include "converter.h"
 
-template<typename T>
-std::string Converter<T>::toHex(T num) const {
+std::string Converter::toHex(int num) {
     if (num == 0) {
         return "0";
     }
 
     const std::string hexChars = "0123456789ABCDEF";
-    std::string hexResult = "";
+    std::string hexResult;
 
     while (num != 0) {
         int remainder = num % 16;
@@ -18,9 +19,8 @@ std::string Converter<T>::toHex(T num) const {
     return hexResult;
 }
 
-template<typename T>
-T Converter<T>::fromHex(const std::string& hex) const {
-    T decimalResult = 0;
+int Converter::fromHex(const std::string& hex) {
+    int decimalResult = 0;
     for (const char& c : hex) {
         decimalResult *= 16;
         if ('0' <= c && c <= '9') {
@@ -34,11 +34,11 @@ T Converter<T>::fromHex(const std::string& hex) const {
     return decimalResult;
 }
 
-template<typename T>
-Converter<T>::NumberConverter() : decimalNumber(0), hexString("") {}
+Converter::Converter()
+    : decimalNumber(0){
+}
 
-template<typename T>
-void Converter<T>::getInput(int choice) {
+void Converter::getInput(int choice) {
     if (choice == 1) {
         std::cout << "Enter a number in decimal system: ";
         while (!(std::cin >> decimalNumber)) {
@@ -58,13 +58,10 @@ void Converter<T>::getInput(int choice) {
     }
 }
 
-template<typename T>
-void Converter<T>::displayResult(int choice) const {
+void Converter::displayResult(int choice) const {
     if (choice == 1) {
         std::cout << "The hexadecimal representation is: " << toHex(decimalNumber) << std::endl;
     } else {
         std::cout << "The decimal representation is: " << fromHex(hexString) << std::endl;
     }
 }
-
-template class Converter<int>;

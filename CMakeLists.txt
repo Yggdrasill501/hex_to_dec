@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 23)
 
 add_executable(dec_to_hex main.cpp
         converter.h
-        converter.cpp)
+        converter.cpp
+        Tests/test_converter.cpp)

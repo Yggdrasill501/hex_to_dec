@@ -5,22 +5,20 @@
 #include <string>
 #include <limits>
 #include <cctype>
-#include <type_traits>
 
-template<typename T>
 class Converter {
-    static_assert(std::is_integral<T>::value, "Type must be an integral type!");
-
 private:
-    T decimalNumber;
+    int decimalNumber;
     std::string hexString;
 
-    std::string toHex(T num) const;
-    T fromHex(const std::string& hex) const;
+    static std::string toHex(int num) ;
+    static int fromHex(const std::string& hex) ;
 
 public:
     Converter();
     void getInput(int choice);
     void displayResult(int choice) const;
 };
+
+
 #endif //CONVERTER_H
