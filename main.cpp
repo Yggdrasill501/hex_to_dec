@@ -9,14 +9,15 @@ int main() {
 
     if(input == 1){
         DecimalToHex converter;
+        return 0;
     }
     else if(input == 2){
         HexToDecimal converter;
     }
     else{
         std::cout << "Wrong input." << std::endl;
+        return 1;
     }
-
 
     // input string hex number
     // convert it
@@ -25,7 +26,4 @@ int main() {
     // input int decimal number
     // convert it
     // display hex as string
-
-
-    return 0;
 }
