@@ -4,10 +4,15 @@
 
 #ifndef DEC_TO_HEX_HEX_TO_DECIMAL_H
 #define DEC_TO_HEX_HEX_TO_DECIMAL_H
+#include <iostream>
+#include <string>
 
+class HexToDecimal {
 
-class hex_to_decimal {
-
+public:
+    std:string readInput();
+    void convert(std::string input);
+    void print(int input);
 };
 
 
