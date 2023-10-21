@@ -8,6 +8,4 @@ add_executable(dec_to_hex main.cpp
         decimal_to_hex.h
         hex_to_decimal.cpp
         hex_to_decimal.h
-        functions.cpp
-        functions.h
 )
