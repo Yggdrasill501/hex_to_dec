@@ -1,14 +1,15 @@
 #include <iostream>
 #include "decimal_to_hex.h"
+#include "hex_to_decimal.h"
 
 int main() {
-    // input hex number
+    // input string hex number
     // convert it
-    // display result
+    // display int decimal number
 
-    // input decimal number
+    // input int decimal number
     // convert it
-    // display result
+    // display hex as string
 
 
     return 0;
